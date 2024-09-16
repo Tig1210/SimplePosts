@@ -1,0 +1,27 @@
+@import '../../variables';
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 95%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: $box_shadow_block;
+
+    overflow-y: scroll;
+
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 15px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import '../../_variables.scss';
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .block {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .circle {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 5px solid transparent;
+      background:
+        linear-gradient(white 0 0) padding-box,
+        linear-gradient($first_color, $second_color) border-box;
+      animation-name: rotation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+}

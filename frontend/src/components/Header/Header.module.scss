@@ -1,0 +1,32 @@
+@import '../../_variables';
+
+.main {
+  height: 100px;
+  background-color: white;
+  border-radius: $border_radius;
+  box-shadow: $box_shadow_block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: $font_small;
+    }
+  }
+}

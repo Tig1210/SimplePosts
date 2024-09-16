@@ -1,0 +1,126 @@
+@import '../../variables';
+.main {
+  width: 100%;
+  height: 100%;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    .info {
+      background-color: white;
+      width: 20%;
+      height: 95%;
+      border-radius: 15px;
+      box-shadow: $box_shadow_block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .sec {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .avatar {
+          margin-top: 10px;
+          border: 3px solid $first_color;
+          max-width: 300px;
+          width: 100%;
+          height: auto;
+          border-radius: 15px 15px 0px 0px;
+
+          img {
+            // max-width: 300px;
+            width: 100%;
+          }
+        }
+
+        .user {
+          width: 100%;
+
+          .block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 3px solid $second_color;
+            padding: 15px;
+            gap: 20px;
+            border-radius: 0px 0px 15px 15px;
+          }
+        }
+
+        .addCard {
+          border: 3px solid transparent;
+          background:
+            linear-gradient(white 0 0) padding-box,
+            linear-gradient(to right, $first_color, $second_color) border-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+
+          p {
+            font-size: 64px;
+            background: -webkit-linear-gradient($first_color, $second_color);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+
+    .list {
+      background-color: white;
+      width: 75%;
+      height: 95%;
+      border-radius: 15px;
+      box-shadow: $box_shadow_block;
+
+      .containerList {
+        padding: 20px;
+        // border: 1px solid red;
+        // height: 9%;
+        height: 94.5%;
+        position: relative;
+        overflow-y: scroll;
+
+        .cards {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          gap: 20px;
+
+          .card {
+            border: 1px solid transparent;
+            background:
+              linear-gradient(white 0 0) padding-box,
+              linear-gradient(120deg, $first_color, $second_color) border-box;
+            width: 200px;
+            height: 300px;
+            border-radius: 20px;
+            box-shadow: $box_shadow_block;
+
+            .bl {
+              padding: 10px;
+              position: relative;
+
+              .delete {
+                position: absolute;
+                right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

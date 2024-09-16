@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Тигран",
+        "birth": "1996-10-12",
+        "login": "DarkTig",
+        "password": "$2b$10$WNwVkf6cjLSO0KDoF2DWC.mKTON969Erd1LLUx7k.NsjKSgbYszya"
+    },
+    {
+        "id": 2,
+        "name": "Рандом",
+        "birth": "1997-05-09",
+        "login": "random12",
+        "password": "$2b$10$/QRJI1LCHrjbZQdT6jJJmewsm8q4xFQd8oA77jLkkZL9rTKDJM9pa"
+    },
+    {
+        "id": 3,
+        "name": "elena",
+        "birth": "",
+        "login": "elena",
+        "password": "$2b$10$ydEEKen2cq1YeZXeQ5l3uuZ.Liy58rC7OWPGJLpliWM.eG.0i1BW2"
+    }
+]

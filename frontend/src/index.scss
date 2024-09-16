@@ -1,0 +1,29 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  background: url('./assets/background.png');
+  background-repeat: no-repeat;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 15px;
+  box-sizing: border-box;
+}

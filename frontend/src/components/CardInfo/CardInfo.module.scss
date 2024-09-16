@@ -1,0 +1,51 @@
+@import '../../variables';
+
+.card {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(white 0 0) padding-box,
+    linear-gradient(120deg, $first_color, $second_color) border-box;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: $box_shadow_block;
+
+  .bl {
+    padding: 10px;
+    height: 90%;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .delete {
+      position: absolute;
+      right: 10px;
+    }
+
+    .like {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .l {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .icon {
+          width: 20px;
+          height: 40px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
